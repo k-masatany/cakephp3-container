@@ -20,8 +20,6 @@ RUN a2enmod rewrite
 
 RUN systemctl enable cron
 
-# copy docker-php-entrypoint
-# COPY config/docker-php-entrypoint /usr/local/bin/docker-php-entrypoint
-# RUN chmod +x /usr/local/bin/docker-php-entrypoint
-
 ENV CAKE_ENV_MODE production
+
+EXPOSE 80
